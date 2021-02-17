@@ -20,6 +20,21 @@
       </ul>
     </nav>
   </header>
-    <p>Y le chacal est présent et il est beau, j'aime le piment et le poulet basque, le chocolat était un peu trop présent en décembre. Je pense qu'il faudrait que je perde du poids apres les fetes.</p>
+    <p>Let’s start with something that is implemented in the shipping version of one browser, and in beta in another. In CSS Grid, we can use the gap, column-gap and row-gap properties to define the gaps between rows and columns or both at the same time. The column-gap feature also appears in the Multi-column layout to create gaps between columns.
+
+While you can use margins to space out grid items, the nice thing about the gap feature is that you only get gaps between your items; you do not end up with additional space to account for at the start and end of the grid. Adding margins has typically been how we have created space between flex items. To create a regular space between flex items, we use a margin. If we do not want a margin at the start and end, we have to use a negative margin on the container to remove it.
+
+It would be really nice to have that gap feature in Flexbox as well, wouldn’t it? The good news is that we do have — it’s already implemented in Firefox and is in the Beta version of Chrome.</p>
+<p>MIND THE GAP
+The Flexbox gap implementation highlights a few interesting things. Firstly, you may well remember that when the gap feature was first introduced to Grid Layout, the properties were:
+
+grid-gap
+grid-row-gap
+grid-column-gap
+These properties were shipped when grid first appeared in browsers. However, in much the same way as the alignment features (justify-content, align-content, align-items, and so on) first appeared in Flexbox and then became available to Grid (once it was decided the gap features were useful to more than grid), they were moved and renamed.
+
+Along with those alignment features, the gap properties are now in the Box Alignment specification. The specification deals with alignment and space distribution so is a natural home for them. To prevent us from having multiple properties prefixed with a spec name, they were also renamed to drop the grid- prefix.
+
+If you have the grid- prefixed versions in your code, you don’t need to worry. They have been kept as an alias of the properties so your code won’t break. For new projects, however, the unprefixed versions are implemented in all browsers.</p>
   </body>
 </html>
